@@ -26,6 +26,9 @@ app.use((req,res,next)=>{
 
 });
 
+app.use("/",(req,res,next)=>{
+  res.end("Sucess");
+})
 app.use('/api/posts',postRoutes);
 app.use('/api/users',userRoutes);
 
